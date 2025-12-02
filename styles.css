@@ -69,7 +69,8 @@ main {
 .hero {
     text-align: center;
     padding: 96px 16px;
-    background: rgba(0,0,0,0.3);
+    background: rgba(0, 0, 0, 0.4);
+    background-blend-mode: darken;
     border-radius: 0 0 15px 15px;
     margin-bottom: 32px;
     background-image: url(assets/mountain.png);
@@ -83,9 +84,9 @@ main {
 }
 
 .hero p {
-    font-size: 20.8px;
+    font-size: 20px;
     margin-bottom: 40px;
-    color: black;
+    color: #f0f0f0;
 }
 
 .hero-buttons button {
@@ -211,6 +212,11 @@ footer {
 
 .footer-content a:hover {
     color: #2a2a2a;
+}
+
+.about-us p{
+    color: black;
+    font-weight: 500;
 }
 
 @media (max-width: 768px) {
