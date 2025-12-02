@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Mounts of the World</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="assets\logo.png" alt="Mounts of the World Logo">
+                <a href="index.html"><h1>Mounts of the World</h1></a>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Mountains</a></li>
+                <li><a href="#">Book a Trip</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="login-container">
+            <div class="login-box">
+                <h2>Welcome Back</h2>
+                
+                <form id="login-form">
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                    </div>
+
+                    <div class="remember-forgot">
+                        <label style="display: flex; align-items: center; cursor: pointer;">
+                            <input type="checkbox" name="remember" style="width: auto; border: none; margin: 0; margin-right: 8px;">
+                            Remember me
+                        </label>
+                        <a href="#">Forgot Password?</a>
+                    </div>
+
+                    <button type="submit" class="login-btn">Sign In</button>
+                </form>
+
+                <div class="signup-link">
+                    Don't have an account? <a href="register.html">Sign up here</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="about-us">
+                <h4>About Us</h4>
+                <p>Connecting adventurers with the world’s most iconic peaks—celebrating nature, culture, and unforgettable journeys.</p>
+            </div>
+            <div class="quick-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Mountains</a></li>
+                    <li><a href="#">Book a Trip</a></li>
+                </ul>
+            </div>
+            <div class="contact">
+                <h4>Contact</h4>
+                <p>Email: contact@mountsoftheworld.com</p>
+                <p>Phone: +1 234 567 890</p>
+            </div>
+            <div class="follow-us">
+                <h4>Follow Us</h4>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">YouTube</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
