@@ -16,7 +16,7 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="mountains.html">Mountains</a></li>
-                <li><a href="#">Book a Trip</a></li>
+                <!-- <li><a href="#">Book a Trip</a></li> -->
                 <li><a href="login.html">Login</a></li>
             </ul>
         </nav>
@@ -27,7 +27,7 @@
             <h2>Discover the World's Most <br> Epic Mountains</h2>
             <p>Explore breathtaking peaks, plan your adventure, and <br> experience nature's grandeur</p>
             <div class="hero-buttons">
-                <button>Explore Mountains</button>
+                <button onclick="window.location.href='mountains.html'">Explore Mountains</button>
                 <button>Book a Trip</button>
             </div>
         </section>
@@ -60,6 +60,41 @@
         </section>
     </main>
 
+    <!-- Mountain Detail Window -->
+    <div id="mountain-window" class="mountain-window">
+        <div class="mountain-window-content">
+            <span class="close">&times;</span>
+            <div class="mountain-window-body">
+                <img id="modal-mountain-img" src="" alt="Mountain" class="mountain-window-img">
+                <div class="mountain-window-info">
+                    <h2 id="modal-mountain-name"></h2>
+                    <div class="mountain-window-location">
+                        <img id="modal-flag-img" src="" alt="Flag" class="mountain-window-flag">
+                        <p id="modal-mountain-location"></p>
+                    </div>
+                    <div class="mountain-window-details">
+                        <div class="detail-item">
+                            <strong>Altitude:</strong>
+                            <p id="modal-altitude"></p>
+                        </div>
+                        <div class="detail-item">
+                            <strong>First Climber(s) to Summit:</strong>
+                            <p id="modal-first-climber"></p>
+                        </div>
+                        <div class="detail-item">
+                            <strong>First Climbed Date:</strong>
+                            <p id="modal-first-climbed-date"></p>
+                        </div>
+                        <div class="detail-item">
+                            <strong>Description:</strong>
+                            <p id="modal-description"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <footer>
         <div class="footer-content">
             <div class="about-us">
@@ -90,6 +125,7 @@
         </div>
     </footer>
 
+    <script src="script.js"></script>
     <script src="mountains.js"></script>
 </body>
 </html>
